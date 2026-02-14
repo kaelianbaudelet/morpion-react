@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+body {
+  background-color: white;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+@keyframes intense-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-flash {
+  animation: intense-blink 0.3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-flash-slow {
+  animation: intense-blink 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
